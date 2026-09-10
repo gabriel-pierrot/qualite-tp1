@@ -5,9 +5,6 @@ package iut;
  */
 public class Sub {
     public static int sub(int a, int b){
-        int resultat;
-        resultat = a-b;
-
-        return resultat;
+        return a-b;
     }
 }

@@ -23,8 +23,8 @@ public class SubTest {
         paire2[1] = 3;
         attendu2 = 8;
 
-        assertEquals(attendu1, recupereResultat(paire1[0], paire1[1]));
-        assertEquals(attendu2, recupereResultat(paire2[0], paire2[1]));
+        assertEquals(attendu1, recupereResultat(paire1[0], paire1[1]), "Erreur: " + recupereResultat(paire1[0], paire1[0]) + " != " + attendu1);
+        assertEquals(attendu2, recupereResultat(paire2[0], paire2[1]), "Erreur: " + recupereResultat(paire1[0], paire1[0]) + " != " + attendu1);
     }
 
     private int recupereResultat(int a, int b){
